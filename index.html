@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heart Curve</title>
+
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-deppink">Send this to your love</h1>
+      <canvas></canvas>
+      <div class="box">
+        <p class="text-deppink"><span>a = </span> <span id="value">0</span></p>
+        <input type="range" id="range" name="range" min="0" max="50" />
+      </div>
+      <div class="board">
+        <p>
+          &#402;(x) = x<sup>2/3</sup> + 0.9 * (3.3 - x
+          <sup>2</sup>)<sup>1/2</sup>*sin(<span class="deepink">a</span>*&pi;*x)
+        </p>
+      </div>
+      <small class="author">
+        --&nbsp;Create by
+        <a href="https://github.com/o1key" target="_blank">o1key</a>&nbsp;--
+      </small>
+    </div>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+  </body>
+</html>

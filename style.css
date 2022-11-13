@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body {
+  display: grid;
+  place-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+
+  font-size: 2rem;
+  background-color: #ffe6f3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  max-width: 600px;
+  border-radius: .5rem;
+
+  background-color: #fff;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 5px rgb(255 20 147/0.3);
+}
+
+.text-deppink {
+  color: deeppink;
+}
+
+small {
+  font-style: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+small a {
+  color: deeppink;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+small a:hover {
+  text-decoration: underline;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+input[type="range"] {
+  flex: 1;
+  max-width: 300px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: none;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  background-color: deeppink;
+  margin-top: -0.5rem;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+.board {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.1);
+  background: rgba(128, 128, 128, 0.05);
+  margin: 1rem 0;
+}
